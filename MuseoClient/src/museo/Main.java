@@ -31,6 +31,7 @@ public class Main {
         for (Museo m : musei) System.out.println(m);
         
         //parte relativa ai messaggi
+        ctx = new InitialContext();
         ConnectionFactory connection = (ConnectionFactory) ctx.lookup("jms/"
                 + "javaee7/ConnectionFactory");
         Destination topic = (Destination) ctx.lookup("jms/javaee7/Topic");

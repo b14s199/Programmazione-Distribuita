@@ -13,6 +13,7 @@ import java.io.Serializable;
  */
 // ho dimenticato di mettere implements Serializable
 public class MessageDTO implements Serializable {
+    private static final long serialVersionUID = 1L;
     private long idMuseo;
     private int numVisitatori;
 
